@@ -1,5 +1,6 @@
 package beginner;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static constant.Constants.__;
@@ -11,23 +12,24 @@ public class A_AboutPrimitives {
 	public void integersHaveAFairlyLargeRange() {
         int a = 2147483647;
         int b = 2;
-		assertEquals(Integer.MIN_VALUE, -1);
-		assertEquals(Integer.MAX_VALUE, __);
-        assertEquals(Integer.SIZE, __);
-        assertEquals(a+b, __);
+		assertEquals(Integer.MIN_VALUE, -2147483648);
+		assertEquals(Integer.MAX_VALUE, 2147483647);
+        assertEquals(Integer.SIZE, 32);
+        assertEquals(a+b, -2147483647);
 	}
 
 	@Test
 	public void longsHaveALargerRangeThanInts() {
-        assertEquals(Long.MIN_VALUE, __);
-		assertEquals(Long.MAX_VALUE, __);
-        assertEquals(Long.SIZE, __);
+        assertEquals(Long.MIN_VALUE, -9223372036854775808L);
+		assertEquals(Long.MAX_VALUE, 9223372036854775807L);
+        assertEquals(Long.SIZE, 64);
 	}
 
+	// @SuppressWarnings("deprecation")
 	@Test
 	public void doublesHaveALargeRange() {
-		assertEquals(Double.MIN_VALUE, __);
-		assertEquals(Double.MAX_VALUE, __);
-        assertEquals(Double.SIZE, __);
+		assertEquals(Double.MIN_VALUE, 4.9E-324,0.00001);
+		assertEquals(Double.MAX_VALUE, 1.7976931348623157E308,0.00001);
+        assertEquals(Double.SIZE, 64);
 	}
 }
