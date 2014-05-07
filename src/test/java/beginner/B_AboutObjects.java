@@ -21,8 +21,8 @@ public class B_AboutObjects {
 		class Foo {}
 
 		Class<?>[] ancestors = getAncestors(new Foo());
-		assertEquals(ancestors[0], __);
-		assertEquals(ancestors[1], __);
+		assertEquals(ancestors[0], Foo.class);
+		assertEquals(ancestors[1], Object.class);
 	}
 
 	@Test
