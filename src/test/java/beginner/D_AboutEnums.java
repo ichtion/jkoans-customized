@@ -16,15 +16,15 @@ public class D_AboutEnums {
 	@Test
 	public void basicEnums() {
 		Colors blue = Colors.Blue;
-		assertEquals(blue == Colors.Blue, __);
-		assertEquals(blue == Colors.Red, __);
-		assertEquals(blue instanceof Colors, __);
+		assertEquals(blue == Colors.Blue, true);
+		assertEquals(blue == Colors.Red, false);
+		assertEquals(blue instanceof Colors, true);
 	}
 	
 	@Test
 	public void basicEnumsAccess() {
 		Colors[] colorArray = Colors.values();
-		assertEquals(colorArray[2], __);
+		assertEquals(colorArray[2], Colors.Green);
 	}
 	
 	enum SkatSuits {
@@ -38,7 +38,7 @@ public class D_AboutEnums {
 		// value is private but we still can access it. Why?
 		// Try moving the enum outside the AboutEnum class... What do you expect?
 		// What happens?
-		assertEquals(SkatSuits.Clubs.value > SkatSuits.Spades.value, __);
+		assertEquals(SkatSuits.Clubs.value > SkatSuits.Spades.value, true);
 	}
 	
 }
