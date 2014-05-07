@@ -11,10 +11,10 @@ public class A_AboutPrimitives {
 	public void integersHaveAFairlyLargeRange() {
         int a = 2147483647;
         int b = 2;
-		assertEquals(Integer.MIN_VALUE, -1);
-		assertEquals(Integer.MAX_VALUE, __);
-        assertEquals(Integer.SIZE, __);
-        assertEquals(a+b, __);
+		assertEquals(Integer.MIN_VALUE, -2147483648);
+		assertEquals(Integer.MAX_VALUE, a);
+        assertEquals(Integer.SIZE, 32);
+        assertEquals(a+b, -2147483647);
 	}
 
 	@Test
