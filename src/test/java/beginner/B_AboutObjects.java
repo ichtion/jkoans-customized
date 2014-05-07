@@ -21,17 +21,10 @@ public class B_AboutObjects {
 		class Foo {}
 
 		Class<?>[] ancestors = getAncestors(new Foo());
-		assertEquals(ancestors[0], __);
-		assertEquals(ancestors[1], __);
+		assertEquals(ancestors[0], Foo.class);
+		assertEquals(ancestors[1], Object.class);
 	}
 
-	@Test
-	public void objectToString() {
-		Object object = new Object();
-		// TODO: Why is it best practice to ALWAYS override toString?
-		String expectedToString = MessageFormat.format("{0}@{1}", Object.class.getName(), Integer.toHexString(object.hashCode()));
-		assertEquals(expectedToString, __); // hint: object.toString()
-	}
 
 	private Class<?>[] getAncestors(Object object) {
 		List<Class<?>> ancestors = new ArrayList<Class<?>>();

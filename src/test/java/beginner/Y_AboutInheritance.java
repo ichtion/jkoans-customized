@@ -17,9 +17,9 @@ public class Y_AboutInheritance {
 	
 	@Test
 	public void differenceBetweenOverloadingAndOverriding() {
-		assertEquals(new Figure().getDimension(),__);
-		assertEquals(new Square().getDimension(),__);
-		assertEquals(new Square().getDimension("oh no"),__);
+		assertEquals(new Figure().getDimension(),"the default dimension for figure is 2");
+		assertEquals(new Square().getDimension(),"square with dimension 2");
+		assertEquals(new Square().getDimension("oh no"),"oh no");
 	}
 	
 }
