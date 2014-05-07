@@ -12,7 +12,7 @@ public class A_AboutPrimitives {
         int a = 2147483647;
         int b = 2;
 		assertEquals(Integer.MIN_VALUE, -1);
-		assertEquals(Integer.MAX_VALUE, __);
+		assertEquals(Integer.MAX_VALUE, -2);
         assertEquals(Integer.SIZE, __);
         assertEquals(a+b, __);
 	}
