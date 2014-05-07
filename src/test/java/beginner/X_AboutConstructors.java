@@ -23,7 +23,7 @@ public class X_AboutConstructors {
 
     @Test
     public void simpleConstructorOrder() {
-        assertEquals(new B().someString, __);
+        assertEquals(new B().someString, "xxxAB");
     }
 
 }
