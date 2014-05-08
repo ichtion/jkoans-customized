@@ -13,7 +13,7 @@ public class E_AboutCollections {
 	@Test
 	public void usingAnArrayList() {
 		List<String> list = new ArrayList<String>();
-
+		
         list.add("Chicken");
 		list.add("Dog");
 		list.add("Chicken");
