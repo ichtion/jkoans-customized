@@ -18,9 +18,9 @@ public class E_AboutCollections {
 		list.add("Dog");
 		list.add("Chicken");
 
-        assertEquals(list.get(0), A);
-		assertEquals(list.get(1), __);
-		assertEquals(list.get(2), __);
+        assertEquals(list.get(0), "Chicken");
+		assertEquals(list.get(1), "Dog");
+		assertEquals(list.get(2), "Chicken");
 	}
 	
 	@Test
@@ -31,10 +31,10 @@ public class E_AboutCollections {
 		set.add("Cat");
 		set.add("Dog");
 
-        assertEquals(set.size(), __);
-		assertEquals(set.contains("Dog"), __);
-		assertEquals(set.contains("Cat"), __);
-		assertEquals(set.contains("Chicken"), __);
+        assertEquals(set.size(), 2);
+		assertEquals(set.contains("Dog"), true);
+		assertEquals(set.contains("Cat"), true);
+		assertEquals(set.contains("Chicken"), false);
 	}
 	
 	@Test
@@ -45,10 +45,10 @@ public class E_AboutCollections {
 		map.put("two", 2);
 		map.put("three", 3);
 
-        assertEquals(map.size(), __);
-		assertEquals(map.containsKey("one"), __);
-		assertEquals(map.containsKey("two"), __);
-		assertEquals(map.containsValue(3), __);
-		assertEquals(map.get("one"), __);
+        assertEquals(map.size(), 3);
+		assertEquals(map.containsKey("one"), true);
+		assertEquals(map.containsKey("two"), true);
+		assertEquals(map.containsValue(3), true);
+		assertEquals(map.get("one"), Integer.valueOf(1));
 	}
 }
