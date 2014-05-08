@@ -2,7 +2,6 @@ package beginner;
 
 import org.junit.Test;
 
-import static constant.Constants.__;
 import static org.junit.Assert.assertEquals;
 
 public class M_AboutEquality {
