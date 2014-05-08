@@ -18,7 +18,7 @@ public class E_AboutCollections {
 		list.add("Dog");
 		list.add("Chicken");
 
-        assertEquals(list.get(0), __);
+        assertEquals(list.get(0), A);
 		assertEquals(list.get(1), __);
 		assertEquals(list.get(2), __);
 	}
