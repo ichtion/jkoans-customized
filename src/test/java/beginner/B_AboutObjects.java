@@ -1,6 +1,7 @@
 package beginner;
 
 import org.junit.Test;
+import org.junit.*;
 
 import java.text.MessageFormat;
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ public class B_AboutObjects {
 
 	@Test
 	public void newObjectInstancesCanBeCreatedDirectly() {
-		assertEquals(new Object() instanceof Object, __);
+		assertEquals(new Object() instanceof Object, true);
 	}
 
 	@Test
