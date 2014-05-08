@@ -17,7 +17,7 @@ public class N_AboutConditionals {
 		} else {
 			x = 0;
 		}
-		assertEquals(x,__);
+		assertEquals(x,2);
 	} 
 	
 }
