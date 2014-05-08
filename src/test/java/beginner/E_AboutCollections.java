@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import java.util.*;
 
-import static constant.Constants.__;
 import static org.junit.Assert.assertEquals;
 
 
