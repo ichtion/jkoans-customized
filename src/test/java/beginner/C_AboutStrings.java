@@ -9,7 +9,7 @@ public class C_AboutStrings {
 
 	@Test
 	public void implicitStrings() {
-		assertEquals("just a plain ole string".getClass(), __);
+		assertEquals("just a plain ole string".getClass(), String.class);
 	}
 
 	@Test
