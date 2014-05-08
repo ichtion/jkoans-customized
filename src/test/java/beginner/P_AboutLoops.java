@@ -13,7 +13,7 @@ public class P_AboutLoops {
 		for(int i = 0; i < 5; i++) {
 			s = s + i + " ";
 		}
-		assertEquals(s, __);
+		assertEquals(s, "0 1 2 3 4 " );
 	}
 	
 	@Test
@@ -23,7 +23,7 @@ public class P_AboutLoops {
 		for(int j : list) {
 			s = s + "." + j;
 		}
-		assertEquals(s, __);
+		assertEquals(s, "-.1.2.3.4" );
 	}
 	
 	@Test
@@ -32,7 +32,7 @@ public class P_AboutLoops {
 		while(result < 3) {
 			result++;
 		}
-		assertEquals(result, __);
+		assertEquals(result, 3);
 	}
 	
 }
